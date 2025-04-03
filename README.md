@@ -1,3 +1,63 @@
+# RE-HP Dashboard
+
+RE-HP Dashboardは、Webサイトのパフォーマンスデータを可視化し分析するためのReactベースのダッシュボードアプリケーションです。CSVファイルからデータをインポートし、インタラクティブなチャートと表でデータを表示します。
+
+![Dashboard Screenshot]()
+
+## 主な機能
+
+- **データインポート**: CSVファイルからのデータ読み込みと解析
+- **インタラクティブなチャート**: 各種メトリクスを視覚的に表示
+- **レスポンシブデザイン**: モバイルからデスクトップまで対応
+- **ダークモード対応**: ユーザー体験向上のための明暗切り替え
+- **フィルタリング機能**: 日付やカテゴリによるデータフィルタリング
+- **ホスト別データ管理**: 複数サイトのデータを一括管理
+
+## 技術スタック
+
+- **フレームワーク**: Next.js (React)
+- **スタイリング**: Tailwind CSS
+- **チャート**: Recharts
+- **状態管理**: React Hooks
+- **データ処理**: CSVパーサー
+- **UI/UXライブラリ**: shadcn/ui
+
+## 利用方法
+
+以下のコマンドで開発サーバーを起動します:
+
+```bash
+npm run dev
+# または
+yarn dev
+# または
+pnpm dev
+# または
+bun dev
+```
+
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてアプリケーションを表示します。
+
+## データのインポート
+
+1. ホーム画面からCSVファイルをアップロードします
+2. データが自動的に解析され、ダッシュボードに表示されます
+3. 各メトリクスタブを切り替えて異なるデータセットを表示できます
+
+## プロジェクト構成
+
+- `/app` - Next.jsのページとルーティング
+- `/components` - 再利用可能なUIコンポーネント
+- `/lib` - ユーティリティ関数
+- `/utils` - データ処理ロジック
+- `/public` - 静的アセット
+
+## ライセンス
+
+MIT
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
